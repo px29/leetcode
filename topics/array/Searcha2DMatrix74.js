@@ -19,6 +19,7 @@ const searchMatrix = function(matrix, target) {
       end = mid - 1;
     }
   }
+  console.log(i, j);
   return matrix[i][j] === target;
 };
 
