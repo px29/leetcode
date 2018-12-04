@@ -1,4 +1,4 @@
-export const searchMatrix = function(matrix, target) {
+const searchMatrix = function(matrix, target) {
   if (matrix === undefined || matrix.length === 0) {
     return false;
   }
@@ -21,3 +21,5 @@ export const searchMatrix = function(matrix, target) {
   }
   return matrix[i][j] === target;
 };
+
+module.exports.searchMatrix = searchMatrix;
