@@ -2,15 +2,15 @@ const searchMatrix = function(matrix, target) {
   if (matrix === undefined || matrix.length === 0) {
     return false;
   }
-  let start = 0;
+  const w = matrix.length;
   const l = matrix[0].length;
-  let end = matrix.length * l - 1;
-  let i = 0;
-  let j = end;
+  let start = 0;
+  let end = w * l - 1;
   while (start < end) {
-    const mid = Math.ceil((start + end) / 2);
-    i = Math.ceil(mid / l) - 1;
-    j = (mid % l) - 1;
+    const mid = parseInt((start + end) / 2);
+    let i = parseInt(mid / l);
+    let j = mid % l;
+    console.log(i, j);
     if (matrix[i][j] === target) {
       return true;
     } else if (matrix[i][j] < target) {
@@ -19,8 +19,8 @@ const searchMatrix = function(matrix, target) {
       end = mid - 1;
     }
   }
-  console.log(i, j);
-  return matrix[i][j] === target;
+  console.log(end, parseInt(end / l), end % l);
+  return matrix[parseInt(end / l)][end % l] === target;
 };
 
 module.exports.searchMatrix = searchMatrix;
