@@ -6,6 +6,6 @@ const result = WordSearch.exist(
     ['S','F','C','S'],
     ['A','D','E','E']
   ],
-  "ABCCED"
+  "G"
 );
 console.log(result);

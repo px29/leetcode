@@ -9,16 +9,16 @@ var dfs = function(board, visit, i, j, word, index) {
     if (index === word.length) {
         return true;
     }
+    if (!inBoard(board, i, j) || visit[i][j]) {
+        return false;
+    }
     let result = false;
     if (board[i][j] === word[index]) {
         visit[i][j] = true;
         for (let k = 0; k < 4; k++) {
             const x = i + DX[k];
             const y = j + DY[k];
-            console.log(x, y);
-            if (inBoard(board, x, y) && board[x][y] === word[index + 1]) {
-                result = result || dfs(board, visit, x, y, word, index + 1);
-            }
+            result = result || dfs(board, visit, x, y, word, index + 1);
         }
         visit[i][j] = false;
     }
