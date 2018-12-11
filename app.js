@@ -1,4 +1,4 @@
-const Searcha2DMatrix74 = require("./topics/array/Searcha2DMatrix74");
+const WordSearch = require("./topics/array/WordSearch79.js");
 
 console.log(typeof Searcha2DMatrix74.searchMatrix);
 const result = Searcha2DMatrix74.searchMatrix(
