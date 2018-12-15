@@ -1,11 +1,6 @@
-const WordSearch = require("./topics/array/WordSearch79.js");
+const RemoveDuplicatesFromSortedArrayII80 = require("./topics/array/RemoveDuplicatesFromSortedArrayII80.js");
 
-const result = WordSearch.exist(
-  [
-    ['A','B','C','E'],
-    ['S','F','C','S'],
-    ['A','D','E','E']
-  ],
-  "G"
+const result = RemoveDuplicatesFromSortedArrayII80.removeDuplicates(
+  [1,1,1,1,1,1,1,1,2,2,3,3,4,4,5,5]
 );
 console.log(result);
