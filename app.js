@@ -1,6 +1,7 @@
-const RemoveDuplicatesFromSortedArrayII80 = require("./topics/array/RemoveDuplicatesFromSortedArrayII80.js");
+const SearchInRotatedSortedArrayII81 = require("./topics/array/SearchInRotatedSortedArrayII81.js");
 
-const result = RemoveDuplicatesFromSortedArrayII80.removeDuplicates(
-  [1,1,1,1,1,1,1,1,2,2,3,3,4,4,5,5]
+const result = SearchInRotatedSortedArrayII81.search(
+  [2,2,2,0,0,1]
+,0
 );
 console.log(result);
