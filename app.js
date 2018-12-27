@@ -1,6 +1,7 @@
-const LargestRectangleInHistogram84 = require("./topics/array/LargestRectangleInHistogram84.js");
+const buildTree = require("./topics/array/lc106.js");
 
-const result = LargestRectangleInHistogram84.largestReactangleArea3(
-  [2,1,5,6,2,3]
+const result = buildTree.buildTree(
+  [9,3,15,20,7],
+  [9,15,7,20,3]
 );
 console.log(result);
