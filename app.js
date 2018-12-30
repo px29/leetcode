@@ -1,7 +1,6 @@
-const buildTree = require("./topics/array/lc106.js");
+const LC = require("./topics/array/lc152.js");
 
-const result = buildTree.buildTree(
-  [9,3,15,20,7],
-  [9,15,7,20,3]
+const result = LC.maxProduct(
+  [2,3,-2,4]
 );
 console.log(result);
