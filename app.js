@@ -1,6 +1,8 @@
-const LC = require("./topics/array/lc152.js");
+const LC = require("./topics/amazon/oa/Closest2Sum.js");
 
-const result = LC.maxProduct(
-  [2,3,-2,4]
+const result = LC(
+  [1,0,2,4,8,-2,4],
+  [3,-1,-2,5,9,2,1,10,3],
+  6
 );
 console.log(result);
