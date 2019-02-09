@@ -1,7 +1,7 @@
 function closest2Sum (nums1, nums2, target) {
     let result = [];
     let closest = Number.MAX_VALUE;
-    const set = new Set();
+    const set = new Set(); // remove duplicates
     for (const a of nums1) {
         for (const b of nums2) {
             if (Math.abs(target - a - b) < closest) {
