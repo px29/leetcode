@@ -1,8 +1,12 @@
-const LC = require("./topics/walmart/lc45.js");
+const LC = require("./topics/amazon/oa/ShortestPath.js");
 
-console.log(LC);
 const result = LC(
-
-  [[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]]
+  [
+    [1, 1, 1, 0, 1],
+    [1, 0, 1, 1, 0],
+    [1, 1, 1, 0, 1],
+    [0, 1, 0, 1, 1],
+    [1, 1, 1, 1, 9]
+  ]
 );
 console.log(result);
