@@ -1,7 +1,10 @@
-// const WordSearch = require("./topics/array/WordSearch79.js");
-const LargestRectangleinHistogram84 = require("./topics/array/LargestRectangleinHistogram84.js");
+const LC = require('./topics/amazon/oa/ShortestPath.js')
 
-const result = LargestRectangleinHistogram84.largestRectangleArea(
-  [2,1,5,6,2,3]
-);
-console.log(result);
+const result = LC([
+    [1, 1, 1, 0, 1],
+    [1, 0, 1, 1, 0],
+    [1, 1, 1, 0, 1],
+    [0, 1, 0, 1, 1],
+    [1, 1, 1, 1, 9],
+])
+console.log(result)
