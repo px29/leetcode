@@ -1,4 +1,3 @@
-const LC = require("./topics/amazon/oa/ShortestPath.js");
 
 const result = LC(
   [
