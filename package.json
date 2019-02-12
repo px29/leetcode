@@ -1,12 +1,11 @@
 {
-  "name": "leetcode",
-  "version": "1.0.0",
-  "description": "刷题",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./app.js",
-    "java": "javac ./"
-  },
-  "author": "Rui Nan",
-  "license": "MIT"
+    "name": "leetcode",
+    "version": "1.0.0",
+    "description": "刷题",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./app.js"
+    },
+    "author": "Rui Nan",
+    "license": "MIT"
 }

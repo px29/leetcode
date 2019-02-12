@@ -13,6 +13,7 @@ function distance(prev, current) {
     return -1;
 }
 
+// string 5555, 1234567789. keypad 抄图片上的
 function keyboard(string, keypad) {
     const map = new Map();
     for (let i = 0; i < keypad.length; i++) {
