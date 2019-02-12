@@ -3,6 +3,7 @@ const palindrome = require('./topics/wish/palindrome.js');
 const subsequence = require('./topics/wish/subsequence.js');
 
 // keypad
+console.error('Keypad:');
 let array = [['1', '2', '3'], ['4', '5', '6'], ['7', '8', '9']];
 let result = keyboard('5555', array); // expect 0;
 console.log(result);
@@ -15,10 +16,16 @@ console.log(result);
 
 
 // palindrome
+console.error('Palindrome:');
 let string = 'abc';
 result = palindrome(string);
 console.log(result);
 
 // subsequence
+console.error('Subsequence:');
 result = subsequence('cba');
+console.log(result);
+result = subsequence('');
+console.log(result);
+result = subsequence('');
 console.log(result);

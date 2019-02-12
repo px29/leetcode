@@ -9,10 +9,11 @@ function backtracking(str, result, temp, index) {
 
 function subsequence(string) {
     const str = string.trim().split('');
-    if (!str || str.length === 0) {
-        return;
-    }
     const result = [];
+    if (!str || str.length === 0) {
+        return result;
+    }
+ 
     str.sort();
     backtracking(str, result, '', 0);
     return result;
