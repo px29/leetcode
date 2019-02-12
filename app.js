@@ -7,7 +7,7 @@ console.error('Keypad:');
 let array = [['1', '2', '3'], ['4', '5', '6'], ['7', '8', '9']];
 let result = keyboard('5555', array); // expect 0;
 console.log(result);
-result = keyboard('123456789', array); // expect 9
+result = keyboard('123456789', array); // expect 10
 console.log(result);
 
 array = [['4', '1', '6'], ['2', '5', '7'], ['9', '3', '8']];
@@ -17,7 +17,8 @@ console.log(result);
 
 // palindrome
 console.error('Palindrome:');
-let string = 'abc';
+
+let string = 'aba';
 result = palindrome(string);
 console.log(result);
 
@@ -27,5 +28,5 @@ result = subsequence('cba');
 console.log(result);
 result = subsequence('');
 console.log(result);
-result = subsequence('');
+result = subsequence(' a b ');
 console.log(result);

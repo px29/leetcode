@@ -28,9 +28,7 @@ function keyboard(string, keypad) {
             const prevLocation = map.get(pre);
             const currentLocation = map.get(s);
             const dis = distance(prevLocation, currentLocation);
-            if (dis) {
-                result += dis;
-            }
+            result += dis;
         }
         pre = s;
     }

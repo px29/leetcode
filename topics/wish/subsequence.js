@@ -7,16 +7,22 @@ function backtracking(str, result, temp, index) {
     }
 }
 
-function subsequence(string) {
+function subsequence1(string) {
     const str = string.trim().split('');
     const result = [];
-    if (!str || str.length === 0) {
-        return result;
-    }
- 
     str.sort();
     backtracking(str, result, '', 0);
     return result;
 }
 
+function subsequence(string) {
+    const str = string.trim().split('');
+    const result = [];
+    str.sort();
+}
+for (let i = 0; i < str.length; i++) {
+    for (let j = i; j < str.length; j++) {
+        
+    }
+}
 module.exports = subsequence;
