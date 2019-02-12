@@ -11,13 +11,6 @@ root.left = new Node(1);
 root.right = new Node(3);
 
 const result = LC(
-  [
-    [1, 1, 1, 0, 1],
-    [1, 0, 1, 1, 0],
-    [1, 1, 1, 0, 1],
-    [0, 1, 0, 1, 1],
-    [1, 1, 1, 1, 9]
-  ]
   root
 );
 console.log(result);
