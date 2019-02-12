@@ -1,4 +1,4 @@
-const LC = require("./topics/walmart/lc98.js");
+ const LC = require("./topics/walmart/lc98.js");
 
 function Node(left = null, right = null, value) {
   this.left = left;
