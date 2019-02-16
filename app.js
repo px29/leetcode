@@ -1,7 +1,7 @@
 
-const f = require('./topics/zillow/breakWord');
+const f = require('./topics/walmart/lc43');
 
-const result = f('le', ['leet', 'code']);
+const result = f('0','111');
 console.log(result);
 
 
