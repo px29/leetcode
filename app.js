@@ -1,12 +1,7 @@
-const LC = require("./topics/amazon/oa/ShortestPath.js");
+const LC = require("./topics/walmart/lc22.js");
 
+const l1 = new 
 const result = LC(
-  [
-    [1, 1, 1, 0, 1],
-    [1, 0, 1, 1, 0],
-    [1, 1, 1, 0, 1],
-    [0, 1, 0, 1, 1],
-    [1, 1, 1, 1, 9]
-  ]
+  2
 );
 console.log(result);
