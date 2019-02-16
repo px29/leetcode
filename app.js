@@ -1,4 +1,4 @@
-const f = require('./topics/zillow/lc140');
+const f = require('./topics/walmart/lc76');
 
-const result = f('catsanddog', ['cat', 'cats', 'and', 'sand', 'dog']);
+const result = f('AAA', 'AAA');
 console.log(result);
