@@ -1,4 +1,8 @@
-const f = require('./topics/amazon/lc126');
-const result = f("hit",
-"cog",
-["hot","dot","dog","lot","log","cog"]);
+const f = require('./topics/amazon/lc200');
+const result = f([
+    [1, 1, 1, 1, 0],
+    [1, 1, 0, 1, 0],
+    [1, 1, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+]);
+console.log(result);
