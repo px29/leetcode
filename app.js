@@ -1,6 +1,2 @@
+const lc = require('./topics/walmart/dice');
 
-const f = require('./topics/walmart/oa');
-const result = f(
-    
-);
-console.log(result);

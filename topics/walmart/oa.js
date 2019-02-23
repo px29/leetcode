@@ -1,4 +1,4 @@
-function oa () {
+function oa() {
     console.log(1);
 }
 
