@@ -1,4 +1,6 @@
 
-const f = require('./topics/amazon/lc89');
-const result = f(3);
+const f = require('./topics/walmart/oa');
+const result = f(
+    
+);
 console.log(result);
