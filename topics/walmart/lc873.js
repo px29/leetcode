@@ -1,36 +1,22 @@
 var lenLongestFibSubseq = function(A) {
-    const dp = new Array();
     const map = new Map();
+    const N = A.length;
+    const dp = [];
     for (let i = 0; i < A.length; i++) {
-        const sb = new Array(A.length);
-        map.set(A[i], i);
-        sb.fill(2);
-        dp.push(sb);
+        const x = new Array(N).fill(2);
+        dp[i] = x;
     }
-    
-    
-    for (let i = 2; i < A.length; i++) {
-        for (let j = i - 1; j >= 0 ; j--) {
-            const prev = A[i] - A[j];
-            if (prev >= A[i]) {
-                break;
-            }
-            if (!map.has(prev)) {
-                continue;
-            }
-            dp[i][j] = dp[j][map.get(prev)] + 1;
-        }
-    }
-    
     let result = 0;
-    for (let j = 2; j < A.length; j++) {
-        for (let i = 1; i < A.length - 1; i++) {
-            if (dp[i][j] > 2) {
-                result = Math.max(result, dp[i][j]);
+    for (let i = 0; i < N; i++) {
+        map.set(A[i], i);
+        for (let j = 0; j < i; j++) {
+            if (A[i] - A[j] < A[j] && map.has(A[i] - A[j])) {
+                dp[i][j] = Math.max(dp[i][j], dp[j][map.get(A[i] - A[j])] + 1);
             }
+            result = Math.max(result, dp[i][j]);
         }
     }
-    return result;
+    return result > 2 ? result : 0;
 };
 
 module.exports = lenLongestFibSubseq;
