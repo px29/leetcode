@@ -1,3 +1,3 @@
-const f = require('./topics/walmart/palindromWithSpace');
-const r = f('Tact boa');
+const f = require('./topics/walmart/parseURLWithEncode');
+const r = f('http://server/action?id=a&id=b#Edasdnasdk');
 console.log(r);
