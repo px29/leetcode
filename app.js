@@ -1,3 +1,2 @@
-const f = require('./topics/walmart/parseURLWithEncode');
+const f = require('./topics/walmart/promise2');
 const r = f();
-console.log(r);

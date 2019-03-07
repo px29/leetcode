@@ -9,4 +9,14 @@ function debounce (fn, delay) {
     }
 }
 
+function debounce1(fn, delay) {
+    let timeId;
+    return function () {
+        const self = this;
+        clearTimeout(timeId);
+        timeId = setTimeout(() => {
+            fn.apply(self, arguments);
+        }, delay);
+    }
+}
 module.exports = debounce;
