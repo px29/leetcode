@@ -39,6 +39,7 @@ function bar() {
 //   })
 
 // 我认为的顺序（1）
+// foo
 // foo timeout before
 // foo timeout after
 // foo timeout
