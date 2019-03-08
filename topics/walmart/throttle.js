@@ -40,18 +40,22 @@ const throttle1 = function (fn, delay) {
     }
 }
 
-const throttle2 =function(fn, delay) {
-    let through;
+
+function throttle4 (fn, delay) {
+    let timeID;
+    let last;
     return function () {
         const self = this;
         const args = arguments;
-        if (!through) {
-            through = true;
-            setTimeout(() => {
-                through = false;
+        if (last && last + delay > Date.now()) {
+            clearTimeout(timeID);
+            timeID = setTimeout(() => {
                 fn.apply(self, args);
             }, delay);
+        } else {
+            last = Date.now();
+            fn.apply(self, args);
         }
     }
 }
-module.exports = throttle1;
+module.exports = throttle4;

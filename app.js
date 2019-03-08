@@ -1,2 +1,3 @@
-const f = require('./topics/walmart/promiseSum');
+const f = require('./topics/walmart/timer');
 const r = f();
+
