@@ -1,3 +1,3 @@
-const f = require('./topics/walmart/timer');
+const f = require('./topics/walmart/trafficLights');
 const r = f();
 
