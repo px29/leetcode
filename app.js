@@ -1,3 +1,2 @@
-const f = require('./topics/walmart/trafficLights');
-const r = f();
-
+var f = require('./topics/wish/calculateCircle');
+f();
