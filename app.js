@@ -1,2 +1,2 @@
-var f = require('./topics/wish/calculateCircle');
+var f = require('./topics/quora/lc852.js');
 f();
