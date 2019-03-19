@@ -1,2 +1,2 @@
-var f = require('./topics/quora/lc852.js');
+var f = require('./topics/quora/lc855.js');
 f();
