@@ -1,2 +1,2 @@
-var f = require('./topics/quora/lc855.js');
+var f = require('./topics/quora/arrayTarget');
 f();
