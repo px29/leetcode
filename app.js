@@ -1,2 +1,2 @@
-var f = require('./topics/quora/arrayTarget');
+var f = require('./topics/wish/lc560');
 f();
