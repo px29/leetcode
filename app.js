@@ -1,2 +1,2 @@
-var f = require('./topics/wish/lc560');
-f();
+const r = require('./topics/wish/lc904');
+r();

@@ -1,22 +1,21 @@
-
-function helper(nums, k, r, temp, start) {
-    if (k === 0) {
-        r.push(temp.slice());
-        return;
-    }
-    
-    for (let i = start; i < nums.length; i++) {
-        if (k >= nums[i]) {
-            temp.push(nums[i]);
-            helper(nums, k - nums[i], r, temp, i + 1);
-            temp.pop();
+var subarraySum = function(nums, k) {
+    const map = new Map();
+    let r = [];
+    let sum = 0;
+    map.set(0, [-1]);//<sum , [...indices]>
+    for (let i = 0; i < nums.length; i++) {
+        sum += nums[i];
+        if (map.has(sum - k)) {
+           \
+        }
+        if (map.has(sum)) {
+            let c = map.get(sum);
+            let indice = [...c, i];
+            map.set(sum, indice);
+        } else {
+            map.set(sum, [i]);
         }
     }
-}
-
-var subarraySum = function(nums, k) {
-    const r = [];
-    helper (nums, k, r, [], 0);
     return r;
 };
 

@@ -9,6 +9,38 @@ function mergeSortIterative(arr) {
     console.log(arr);
 }
 
+function mergeI (arr) {
+    for (let step = 1; step < arr.length; step *= 2) {
+        for (let start = 0; start < arr.length - 1; start += step * 2) {
+            let mid = start + step - 1;
+            let end = start + 2 * step - 1;
+            merge (arr, start, mid, end);
+        }
+    }
+}
+
+function merge(arr, start, mid, end) {
+    let r = [];
+    let s = start;
+    let e = mid + 1;
+    while (s <= mid && e <= end) {
+        if (arr[s] < arr[e]) {
+            r.push(arr[s++]);
+        } else {
+            r.push(arr[e++]);
+        }
+    }
+    while (s <= mid) {
+        r.push(arr[s++]);
+    }
+    while (e <= end) {
+        r.push(arr[e++]);
+    }
+    for (let i = start; i <= end; i++) {
+        arr[i] = r[i - start];
+    }
+}
+
 function merge(arr, start, mid, end) {
     let r = [];
     let a = start;
