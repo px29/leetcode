@@ -1,2 +1,2 @@
-const r = require('./topics/wish/lc904');
+const r = require('./topics/leetcode/array/lc126');
 r();
