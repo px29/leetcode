@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <style>
+    ul {
+        width: auto;
+        height: 20px;
+        background-color: lightgray;
+    }
+
+    li {
+        display: block;
+        width: 20px;
+        height: 100%;
+        margin: 0 5px;
+        border: 1px solid red;
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    on {
+        background-color: red;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    </ul>
+    <script type='text/javascript'>
+      function focus (e) {
+           console.log(e.target);
+        }
+
+
+    window.onload = function () {
+        
+        const ul = document.querySelector('ul');
+        ul.addEventListener('focus', focus);
+      
+    }
+
+    </script>
+</body>
+</html>
