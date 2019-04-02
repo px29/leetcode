@@ -25,3 +25,13 @@ function state_Change() {
         }
     }
 }
+
+function onReady(xhr) {
+    if (xhr)
+}
+
+function ajax (options) {
+    const xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = onReady();
+}
