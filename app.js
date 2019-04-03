@@ -1,3 +1,3 @@
-const r = require('./topics/ebay/addLayerOfTree');
+const r = require('./topics/ebay/addTwoBinary');
 r();
 
