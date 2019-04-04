@@ -1,0 +1,3 @@
+function lastPermutaion(nums) {
+    
+}

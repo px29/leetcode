@@ -1,3 +1,3 @@
-const r = require('./topics/ebay/addTwoBinary');
+const r = require('./topics/ebay/doubleValid');
 r();
 
