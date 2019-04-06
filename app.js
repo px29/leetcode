@@ -1,3 +1,3 @@
-const r = require('./topics/ebay/doubleValid');
+const r = require('./topics/ebay/lc735');
 r();
 
