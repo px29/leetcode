@@ -1,3 +1,3 @@
-const r = require('./topics/ebay/deleteNodeInLinkedList');
+const r = require('./topics/ebay/twoSum');
 r();
 

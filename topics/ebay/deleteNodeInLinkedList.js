@@ -28,8 +28,12 @@ function deleteNodeWithCircle(list, node) {
         h = h.next;
     }
     let next = cur.next;
-    cur = null;
-    h.next = next;
+    if (next.val === cur.val) {
+        h.next = null;
+    } else {
+        cur = null;
+        h.next = next;
+    }
     return dummy.next;
 }
 
@@ -45,9 +49,9 @@ function generateList(arr) {
 }
 
 function call () {
-    let l = generateList([1]);
+    let l = generateList([1,2,3]);
     let r = deleteNodeWithCircle(l, new ListNode(1));
-    r = deleteNode(l, new ListNode(1));
+    // r = deleteNode(l, new ListNode(1));
     let count = 0;
     while (r !== null && count++ < 6) {
         console.log(r.val);
