@@ -1,3 +1,3 @@
-const r = require('./topics/ebay/shuffleArray');
+const r = require('./topics/ebay/BLAHnumber');
 r();
 
