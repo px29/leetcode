@@ -1,3 +1,3 @@
-const r = require('./topics/ebay/BLAHnumber');
+const r = require('./topics/ebay/palindromeSum');
 r();
 
