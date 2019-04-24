@@ -7,7 +7,7 @@ function swap(arr, i, j) {
 function partition (arr, start, end) {
     let pivot = arr[end];
     let i = start;
-    for (let j = start; j <= end; j++) {
+    for (let j = start; j <= end - 1; j++) {
         if (arr[j] <= pivot) {
             swap(arr, i, j);
             i++;

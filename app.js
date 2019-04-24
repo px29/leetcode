@@ -1,3 +1,3 @@
-const r = require('./topics/ebay/palindromeSum');
+const r = require('./topics/leetcode/array/lc1031');
 r();
 
