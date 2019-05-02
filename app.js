@@ -1,3 +1,3 @@
-const r = require('./topics/leetcode/array/lc1010');
+const r = require('./topics/leetcode/array/lc954');
 r();
 
